@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Perplexity UI Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="mobile-container">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="time-pill">11:23</div>
+            <div class="status-icons">
+                <i class="fa-solid fa-signal"></i>
+                <span class="five-g">5G</span>
+                <i class="fa-solid fa-battery-full text-yellow"></i>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="app-header">
+            <button class="icon-btn rounded-full bg-dark-gray text-white">
+                A
+            </button>
+            <div class="toggle-pill bg-dark-gray">
+                <button class="toggle-btn active">
+                    <i class="fa-solid fa-dharmachakra"></i>
+                </button>
+                <button class="toggle-btn">
+                    <i class="fa-regular fa-folder"></i>
+                </button>
+            </div>
+            <button class="profile-btn border-none">
+                <img src="https://i.pravatar.cc/100?img=11" alt="Profile" class="profile-img">
+            </button>
+        </header>
+
+        <!-- Main Content (Center Logo) -->
+        <main class="main-content">
+            <h1 class="logo-text">perplexity</h1>
+        </main>
+
+        <!-- Bottom Controls area -->
+        <div class="bottom-area">
+            <!-- Action suggestions -->
+            <div class="action-buttons-scroll">
+                <button class="action-btn">
+                    <i class="fa-regular fa-square-check"></i> Fact check
+                </button>
+                <button class="action-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i> Research
+                </button>
+                <button class="action-btn">
+                    <i class="fa-regular fa-thumbs-up"></i> Recommend
+                </button>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-container">
+                <!-- Hidden inputs or statuses -->
+                <input type="file" id="media-upload" style="display: none;"
+                    accept="image/*, audio/*, video/*, application/pdf">
+                <div id="attachment-status"
+                    style="display: none; font-size: 13px; color: var(--teal-accent); padding: 0 4px 8px 4px; font-weight: 500;">
+                </div>
+
+                <input type="text" placeholder="Ask anything..." class="ask-input" id="ask-input">
+
+                <div class="input-actions">
+                    <div class="input-actions-left">
+                        <button class="input-icon-btn plus-btn" id="upload-btn">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button class="model-badge">
+                            Model
+                        </button>
+                    </div>
+                    <div class="input-actions-right">
+                        <button class="input-icon-btn transparent-btn">
+                            <i class="fa-solid fa-glasses"></i>
+                        </button>
+                        <button class="input-icon-btn transparent-btn" id="mic-btn">
+                            <i class="fa-solid fa-microphone"></i>
+                        </button>
+                        <button class="input-icon-btn teal-btn" id="send-btn">
+                            <i class="fa-solid fa-wave-square"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- iOS Home Indicator -->
+            <div class="home-indicator"></div>
+        </div>
+    </div>
+</body>
+
+</html>
